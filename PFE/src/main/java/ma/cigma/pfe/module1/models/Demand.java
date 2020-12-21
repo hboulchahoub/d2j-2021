@@ -13,6 +13,7 @@ public class Demand {
 	private String compte;
 	private int nb;
 
+	
 	public String getCompte() {
 		return compte;
 	}
