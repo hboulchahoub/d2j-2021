@@ -16,6 +16,7 @@ import ma.cigma.pfe.module1.models.Demand;
 public class DemandDaoImpl implements IDemandDao {
 	@Override
 	public boolean insert(Demand d) {
+		System.out.println("Calling dao Insert...");
 		return false;
 	}
 

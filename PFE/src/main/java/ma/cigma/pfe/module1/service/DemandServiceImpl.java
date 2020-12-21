@@ -19,6 +19,8 @@ public class DemandServiceImpl implements IDemandService {
 
 	@Override
 	public boolean insertDemand(Demand d) {
+		System.out.println("Calling service Insert...");
+
 		return dao.insert(d);
 	}
 
