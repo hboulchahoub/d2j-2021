@@ -1,6 +1,7 @@
 package ma.cigma.pfe.module1.dao;
 
-import java.util.List;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import ma.cigma.pfe.module1.models.Demand;
 /**
@@ -9,10 +10,6 @@ import ma.cigma.pfe.module1.models.Demand;
  * @author Mr.BOULCHAHOUB
  * @date 21.12.2020
  */
-public interface IDemandDao {
-	
-	boolean insert(Demand d);
-	boolean update(Demand d);
-	boolean delete(Demand d);
-	List<Demand> select(Demand d);
+@Repository
+public interface IDemandDao extends CrudRepository<Demand, Integer>{
 }
