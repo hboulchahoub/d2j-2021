@@ -12,4 +12,5 @@ import ma.cigma.pfe.module1.models.Demand;
  */
 @Repository
 public interface IDemandDao extends CrudRepository<Demand, Integer>{
+	
 }
